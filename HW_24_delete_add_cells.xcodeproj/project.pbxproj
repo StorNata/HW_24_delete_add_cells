@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		05EF1C0C247E4CEA006673C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF1C0B247E4CEA006673C9 /* AppDelegate.swift */; };
-		05EF1C0E247E4CEA006673C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF1C0D247E4CEA006673C9 /* SceneDelegate.swift */; };
 		05EF1C10247E4CEA006673C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF1C0F247E4CEA006673C9 /* ViewController.swift */; };
 		05EF1C13247E4CEA006673C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05EF1C11247E4CEA006673C9 /* Main.storyboard */; };
 		05EF1C15247E4CEB006673C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05EF1C14247E4CEB006673C9 /* Assets.xcassets */; };
 		05EF1C18247E4CEB006673C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05EF1C16247E4CEB006673C9 /* LaunchScreen.storyboard */; };
+		05EF1C22247E4EC8006673C9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF1C21247E4EC8006673C9 /* TableViewController.swift */; };
+		05EF1C24247E4F12006673C9 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF1C23247E4F12006673C9 /* NavigationController.swift */; };
+		05EF1C26247E4FD3006673C9 /* AddDeleteCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF1C25247E4FD3006673C9 /* AddDeleteCellController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05EF1C08247E4CEA006673C9 /* HW_24_delete_add_cells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_24_delete_add_cells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05EF1C0B247E4CEA006673C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05EF1C0D247E4CEA006673C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		05EF1C0F247E4CEA006673C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		05EF1C12247E4CEA006673C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05EF1C14247E4CEB006673C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05EF1C17247E4CEB006673C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05EF1C19247E4CEB006673C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05EF1C21247E4EC8006673C9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		05EF1C23247E4F12006673C9 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		05EF1C25247E4FD3006673C9 /* AddDeleteCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeleteCellController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		05EF1C0A247E4CEA006673C9 /* HW_24_delete_add_cells */ = {
 			isa = PBXGroup;
 			children = (
+				05EF1C20247E4E4B006673C9 /* Controllers */,
+				05EF1C1F247E4E37006673C9 /* Base */,
 				05EF1C0B247E4CEA006673C9 /* AppDelegate.swift */,
-				05EF1C0D247E4CEA006673C9 /* SceneDelegate.swift */,
-				05EF1C0F247E4CEA006673C9 /* ViewController.swift */,
 				05EF1C11247E4CEA006673C9 /* Main.storyboard */,
 				05EF1C14247E4CEB006673C9 /* Assets.xcassets */,
 				05EF1C16247E4CEB006673C9 /* LaunchScreen.storyboard */,
 				05EF1C19247E4CEB006673C9 /* Info.plist */,
 			);
 			path = HW_24_delete_add_cells;
+			sourceTree = "<group>";
+		};
+		05EF1C1F247E4E37006673C9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				05EF1C0F247E4CEA006673C9 /* ViewController.swift */,
+				05EF1C21247E4EC8006673C9 /* TableViewController.swift */,
+				05EF1C23247E4F12006673C9 /* NavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		05EF1C20247E4E4B006673C9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05EF1C25247E4FD3006673C9 /* AddDeleteCellController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				05EF1C10247E4CEA006673C9 /* ViewController.swift in Sources */,
+				05EF1C24247E4F12006673C9 /* NavigationController.swift in Sources */,
+				05EF1C22247E4EC8006673C9 /* TableViewController.swift in Sources */,
 				05EF1C0C247E4CEA006673C9 /* AppDelegate.swift in Sources */,
-				05EF1C0E247E4CEA006673C9 /* SceneDelegate.swift in Sources */,
+				05EF1C26247E4FD3006673C9 /* AddDeleteCellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64A5F5X892;
 				INFOPLIST_FILE = HW_24_delete_add_cells/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64A5F5X892;
 				INFOPLIST_FILE = HW_24_delete_add_cells/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
